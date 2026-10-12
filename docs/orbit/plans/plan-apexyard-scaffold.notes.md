@@ -36,7 +36,7 @@ The owner interview on 2026-10-12 shaped the criteria that moved to the first pr
 - 2026-10-12, q5-constraints: Local output with no auto-push. Fictional data only.
 - 2026-10-12, q6-save: Yes. Then the owner retired the initiative the same day.
 
-Naqid challenged the revision 2 draft (proceed with changes). The owner applied two changes: drop ac2-5 and ac2-6, and add the start, seed and reset criteria to o7 (ac7-2 to ac7-4). The owner kept o2 and did not defer it.
+Naqid challenged the revision 2 draft (proceed with changes). The owner applied two changes: drop ac2-5 and ac2-6, and add the start, seed and reset criteria to the new demo-ready outcome o7 (ac7-2 to ac7-4). The owner kept o2 and did not defer it.
 
 ## Owner decisions
 
@@ -44,7 +44,7 @@ Owner decisions, 2026-10-12:
 
 1. **Superseded 2026-10-12 (interview): the slice order is open.** Revision 1 text: **Slice 1 is a thin end-to-end slice for typescript-nextjs only.** It includes four interview questions: service shape, language, host and coverage floor. It selects a topology and generates a working project with CI and gates. Other stacks and the full interview come in later slices. o1 holds this slice.
 2. **Dropped 2026-10-12 (interview): o4 is out of revision 2.** Revision 1 text: **Infra and cost stay in this initiative as a later outcome (o4).** Also when no starter template exists for a stack, the agent recommends best-practice infrastructure and a cost estimate. The estimate matches the project's scale and budget. The agent writes both as a draft and never applies them. The estimate uses a static price table with a price date and a "not a quote" statement (ac4-6). Generated Terraform strings get an ASCII-only check (ac4-3).
-3. **Superseded 2026-10-12 (owner): the build starts now, alongside the SaaS MVP.** Revision 1 text: Build starts after the 6 Nov scope freeze.
+3. **Superseded 2026-10-12 (owner): the build starts now, inside the first project plan.** Revision 1 text: **Build starts after the 6 Nov scope freeze.** The records can merge now. No build ticket opens before 6 Nov.
 4. **Records PRs use an `orbit/<initiative>-<slug>` branch with no ticket (#1673).** Only the next slice gets a ticket, after its slice record merges.
 
 5. **Dropped 2026-10-12 (interview): o5 and o6 are out of revision 2.** Revision 1 text: **/scaffold has four entry points.** Each entry point offers /scaffold and starts nothing without the owner's yes. A no leaves no files.
