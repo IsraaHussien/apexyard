@@ -1,4 +1,4 @@
-# Notes for the scaffold initiative (current: revision 2)
+# Notes for the scaffold initiative (retired)
 
 These notes sit beside the initiative record. The ORBIT v0.1 schema for that record type has no fields for constraints, decisions, dependencies or proof. The initiative record stays valid ORBIT. The record type and the file names keep the `plan-` prefix (AgDR-0226).
 
@@ -21,16 +21,20 @@ Evidence read on upstream/dev at 2854837, and checked again at 0eda785:
 - No Terraform module template and no price table exist in the repository. o4 has the agent write the infrastructure draft from the spec, not from a template library.
 - The initiative record schema (orbit-spec `schema/plan.schema.json`) has no proof field. Each criterion holds only the condition, and its proof is in the table below (direction of me2resh/apexyard#1618).
 
+## Retired
+
+2026-10-12, owner decision: `/scaffold` is a tool that every new project uses, so it has no initiative of its own. Its work moves into the plan of the first project that needs it, as that project's first outcome. The skill stays in the framework, so any later project can run it. Revision 1 and its reconciliation are in `docs/orbit/history/`. The interview below shaped the criteria that moved. The framework rule is tracked in #1697.
+
 ## Interview
 
-Revision 2 comes from the owner interview on 2026-10-12. It replaces the audience and scope of revision 1.
+The owner interview on 2026-10-12 shaped the criteria that moved to the first project plan. Revision 2 was never merged.
 
 - 2026-10-12, q1-outcome: Faster demos and pilots.
 - 2026-10-12, q2-intent: For the owner, for demos and pilots.
 - 2026-10-12, q3-outcomes: Keep o1, o2 and o3. Add a demo-ready outcome. Drop o4, o5 and o6.
 - 2026-10-12, q4-acceptance: Keep the o1 to o3 criteria as they are. The demo-ready outcome has a short demo script.
 - 2026-10-12, q5-constraints: Local output with no auto-push. Fictional data only.
-- 2026-10-12, q6-save: Yes, save revision 2.
+- 2026-10-12, q6-save: Yes. Then the owner retired the initiative the same day.
 
 Naqid challenged the revision 2 draft (proceed with changes). The owner applied two changes: drop ac2-5 and ac2-6, and add the start, seed and reset criteria to o7 (ac7-2 to ac7-4). The owner kept o2 and did not defer it.
 
