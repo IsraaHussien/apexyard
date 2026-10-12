@@ -1,4 +1,4 @@
-# Notes for the scaffold initiative (current: revision 1)
+# Notes for the scaffold initiative (current: revision 2)
 
 These notes sit beside the initiative record. The ORBIT v0.1 schema for that record type has no fields for constraints, decisions, dependencies or proof. The initiative record stays valid ORBIT. The record type and the file names keep the `plan-` prefix (AgDR-0226).
 
@@ -21,16 +21,29 @@ Evidence read on upstream/dev at 2854837, and checked again at 0eda785:
 - No Terraform module template and no price table exist in the repository. o4 has the agent write the infrastructure draft from the spec, not from a template library.
 - The initiative record schema (orbit-spec `schema/plan.schema.json`) has no proof field. Each criterion holds only the condition, and its proof is in the table below (direction of me2resh/apexyard#1618).
 
+## Interview
+
+Revision 2 comes from the owner interview on 2026-10-12. It replaces the audience and scope of revision 1.
+
+- 2026-10-12, q1-outcome: Faster demos and pilots.
+- 2026-10-12, q2-intent: For the owner, for demos and pilots.
+- 2026-10-12, q3-outcomes: Keep o1, o2 and o3. Add a demo-ready outcome. Drop o4, o5 and o6.
+- 2026-10-12, q4-acceptance: Keep the o1 to o3 criteria as they are. The demo-ready outcome has a short demo script.
+- 2026-10-12, q5-constraints: Local output with no auto-push. Fictional data only.
+- 2026-10-12, q6-save: Yes, save revision 2.
+
+Naqid challenged the revision 2 draft (proceed with changes). The owner applied two changes: drop ac2-5 and ac2-6, and add the start, seed and reset criteria to o7 (ac7-2 to ac7-4). The owner kept o2 and did not defer it.
+
 ## Owner decisions
 
 Owner decisions, 2026-10-12:
 
-1. **Slice 1 is a thin end-to-end slice for typescript-nextjs only.** It includes four interview questions: service shape, language, host and coverage floor. It selects a topology and generates a working project with CI and gates. Other stacks and the full interview come in later slices. o1 holds this slice.
-2. **Infra and cost stay in this initiative as a later outcome (o4).** Also when no starter template exists for a stack, the agent recommends best-practice infrastructure and a cost estimate. The estimate matches the project's scale and budget. The agent writes both as a draft and never applies them. The estimate uses a static price table with a price date and a "not a quote" statement (ac4-6). Generated Terraform strings get an ASCII-only check (ac4-3).
-3. **Build starts after the 6 Nov scope freeze.** The records can merge now. No build ticket opens before 6 Nov.
+1. **Superseded 2026-10-12 (interview): the slice order is open.** Revision 1 text: **Slice 1 is a thin end-to-end slice for typescript-nextjs only.** It includes four interview questions: service shape, language, host and coverage floor. It selects a topology and generates a working project with CI and gates. Other stacks and the full interview come in later slices. o1 holds this slice.
+2. **Dropped 2026-10-12 (interview): o4 is out of revision 2.** Revision 1 text: **Infra and cost stay in this initiative as a later outcome (o4).** Also when no starter template exists for a stack, the agent recommends best-practice infrastructure and a cost estimate. The estimate matches the project's scale and budget. The agent writes both as a draft and never applies them. The estimate uses a static price table with a price date and a "not a quote" statement (ac4-6). Generated Terraform strings get an ASCII-only check (ac4-3).
+3. **Superseded 2026-10-12 (owner): the build starts now, alongside the SaaS MVP.** Revision 1 text: Build starts after the 6 Nov scope freeze.
 4. **Records PRs use an `orbit/<initiative>-<slug>` branch with no ticket (#1673).** Only the next slice gets a ticket, after its slice record merges.
 
-5. **/scaffold has four entry points.** Each entry point offers /scaffold and starts nothing without the owner's yes. A no leaves no files.
+5. **Dropped 2026-10-12 (interview): o5 and o6 are out of revision 2.** Revision 1 text: **/scaffold has four entry points.** Each entry point offers /scaffold and starts nothing without the owner's yes. A no leaves no files.
    - After /write-spec produces an approved PRD for a new product, it offers /scaffold. The interview reuses PRD answers and asks only for gaps.
    - For a new fork, /onboard recommends /scaffold when the owner selects start a new project. The interview reuses recorded answers.
    - An ORBIT slice handoff offers /scaffold when it needs a new repository. The spec uses initiative outcomes and constraints without repeating recorded questions.

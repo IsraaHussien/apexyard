@@ -1,0 +1,215 @@
+{
+  "specVersion": "0.1",
+  "id": "reconciliation-plan-apexyard-scaffold-20261012T211138Z",
+  "planId": "plan-apexyard-scaffold",
+  "planRevision": 2,
+  "projectSnapshotId": "snapshot-apexyard-scaffold-20261012T211138Z",
+  "reconciledAt": "2026-10-12T21:11:38.331Z",
+  "observations": [
+    "Plan revision 2 from the owner interview on 2026-10-12: o4, o5, o6, ac2-5 and ac2-6 are dropped, and o7-demo-ready is added. No criterion status changed.",
+    "This is the first reconciliation of a new initiative. No work for it exists yet, so every criterion is not-verified.",
+    "The evidence records the state each criterion starts from at 0eda785."
+  ],
+  "criterionAssessments": [
+    {
+      "criterionId": "ac1-1",
+      "status": "not-verified",
+      "evidence": [
+        "No .claude/skills/scaffold directory exists at 0eda785."
+      ],
+      "explanation": "Missing: the four-question interview. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-2",
+      "status": "not-verified",
+      "evidence": [
+        "No .claude/skills/scaffold directory exists at 0eda785."
+      ],
+      "explanation": "Missing: the read of onboarding.yaml and the PRD before the interview. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-3",
+      "status": "not-verified",
+      "evidence": [
+        "No .claude/skills/scaffold directory exists at 0eda785.",
+        "No scaffold spec schema exists at 0eda785."
+      ],
+      "explanation": "Missing: the spec schema and its test. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-4",
+      "status": "not-verified",
+      "evidence": [
+        "No topology rule table exists at 0eda785.",
+        ".claude/skills/handover/SKILL.md step 1.5 picks a bundle in prose."
+      ],
+      "explanation": "Missing: the rule table for typescript-nextjs. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-5",
+      "status": "not-verified",
+      "evidence": [
+        "No .claude/skills/scaffold directory exists at 0eda785."
+      ],
+      "explanation": "Missing: the pick display and the override record. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-6",
+      "status": "not-verified",
+      "evidence": [
+        "topologies/typescript-nextjs holds handbooks, one CI file and one AgDR template, with no starter directory.",
+        "topologies/typescript-nextjs/VERSION is 1.0.0."
+      ],
+      "explanation": "Missing: the starter directory and the minor bump. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-7",
+      "status": "not-verified",
+      "evidence": [
+        "Only .claude/skills/handover/SKILL.md step 5.5 copies a bundle, as prose steps."
+      ],
+      "explanation": "Missing: the copy script. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-8",
+      "status": "not-verified",
+      "evidence": [
+        "topologies/typescript-nextjs/golden-paths/nextjs-ci.yml has no coverage floor."
+      ],
+      "explanation": "Missing: a coverage floor in the generated CI. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-9",
+      "status": "not-verified",
+      "evidence": [
+        "No seeded-fault fixture for a topology bundle exists at 0eda785."
+      ],
+      "explanation": "Missing: the fixture, its CI test and the CI time. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-10",
+      "status": "not-verified",
+      "evidence": [
+        "/handover step 4.5 scores five dimensions (AgDR-0042).",
+        "No generated project exists to score."
+      ],
+      "explanation": "Missing: a recorded step 4.5 run on a generated project. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-11",
+      "status": "not-verified",
+      "evidence": [
+        "topologies/typescript-nextjs/templates/agdr-typescript-nextjs.md exists.",
+        "No .claude/skills/scaffold directory exists at 0eda785."
+      ],
+      "explanation": "Missing: the scaffold AgDR in a fixture run. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-12",
+      "status": "not-verified",
+      "evidence": [
+        "bootstrap_skills in .claude/project-config.defaults.json does not list scaffold."
+      ],
+      "explanation": "Missing: the bootstrap entry, its scope and the Hakim review. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac1-13",
+      "status": "not-verified",
+      "evidence": [
+        "CLAUDE.md heads its skill table with Available skills (67) and does not list /scaffold."
+      ],
+      "explanation": "Missing: the skill text and the docs entries. Next: the first scaffold slice after 6 Nov."
+    },
+    {
+      "criterionId": "ac2-1",
+      "status": "not-verified",
+      "evidence": [
+        "topologies/python-fastapi and topologies/go-data-pipeline exist with no rule table row."
+      ],
+      "explanation": "Missing: the two rows and the team-skills question. Next: an o2 slice."
+    },
+    {
+      "criterionId": "ac2-2",
+      "status": "not-verified",
+      "evidence": [
+        "No gap list exists at 0eda785.",
+        "AgDR-0048 leaves a web plus pipeline shape out of scope."
+      ],
+      "explanation": "Missing: the gap list and the custom start. Next: an o2 slice."
+    },
+    {
+      "criterionId": "ac2-3",
+      "status": "not-verified",
+      "evidence": [
+        "topologies/python-fastapi and topologies/go-data-pipeline have no starter directory."
+      ],
+      "explanation": "Missing: the two starter directories. Next: an o2 slice."
+    },
+    {
+      "criterionId": "ac2-4",
+      "status": "not-verified",
+      "evidence": [
+        "The FastAPI and Go bundle CI files fail below 80 percent coverage.",
+        "No fixture exists for either bundle."
+      ],
+      "explanation": "Missing: the fixtures and the CI time. Next: an o2 slice."
+    },
+    {
+      "criterionId": "ac3-1",
+      "status": "not-verified",
+      "evidence": [
+        "golden-paths/typescript does not exist at 0eda785.",
+        "slice-harness-o5-ddd-boundaries owns the dependency-cruiser config."
+      ],
+      "explanation": "Missing: layer checks in generated CI. Next: an o3 slice after harness o5."
+    },
+    {
+      "criterionId": "ac3-2",
+      "status": "not-verified",
+      "evidence": [
+        "nextjs-ci.yml prints a warning above the bundle-size limit and does not fail."
+      ],
+      "explanation": "Missing: a failing bundle-size check from the spec. Next: an o3 slice."
+    },
+    {
+      "criterionId": "ac3-3",
+      "status": "not-verified",
+      "evidence": [
+        "No fitness-functions file exists in any bundle."
+      ],
+      "explanation": "Missing: the generated fitness-functions file. Next: an o3 slice."
+    },
+    {
+      "criterionId": "ac3-4",
+      "status": "not-verified",
+      "evidence": [
+        "No seeded-fault fixture exists at 0eda785."
+      ],
+      "explanation": "Missing: fixtures for the o3 gates. Next: an o3 slice."
+    },
+    {
+      "criterionId": "ac7-1",
+      "status": "not-verified",
+      "evidence": [],
+      "explanation": "Missing: no demo script is generated. Next: the first build slice adds the demo script to the typescript-nextjs starter."
+    },
+    {
+      "criterionId": "ac7-2",
+      "status": "not-verified",
+      "evidence": [],
+      "explanation": "Missing: no one-command local start exists. Next: the first build slice adds one start command to the starter."
+    },
+    {
+      "criterionId": "ac7-3",
+      "status": "not-verified",
+      "evidence": [],
+      "explanation": "Missing: no seed data exists. Next: the first build slice adds fictional seed data to the starter."
+    },
+    {
+      "criterionId": "ac7-4",
+      "status": "not-verified",
+      "evidence": [],
+      "explanation": "Missing: no reset command exists. Next: the first build slice adds a command that resets the project to its seed."
+    }
+  ]
+}
